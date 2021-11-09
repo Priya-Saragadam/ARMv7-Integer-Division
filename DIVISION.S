@@ -5,7 +5,7 @@
 	LDR R0,=0X40000000
 	LDMIA R0!,{R1,R2,R3}     ;R2 IS DIVIDEND AND R1 IS DIVISOR,let R3 be the quotient/counter with initial value 0
 	CMP R1,#00               ;We cannot divide Dividend with 0. So, we are checking if our divisor i.e. R1 is 0 
-	BEQ SAMBA                ;If R1 is eqaul to 0, we can end the program as the data is invalid
+	BEQ SAMBA                ;If R1 is equal to 0, we can end the program as the data is invalid
 	CMP R2,R1                ;We cannot perform integer division if dividend is less than than the divisor.So, compare dividend and divisor 
 	BLT SAMBA                ;If dividend is less than the divisor, we can end our program as the data is invalid 
 REP SUB R2,R2,R1                 ;Else, Do repeated subtraction of Dividend and divisor and update the result as new Dividend
