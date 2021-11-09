@@ -1,4 +1,4 @@
-# ARMv7-Integer-Division
+# ARM7TDMI-Integer-Division
 Integer Division is simple. We will have a dividend,divisor,quotient and remainder.
 Algorithm is as follows:
  1. Set the value of the counter to 0.
